@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(26, 25, 25);
+    /* background-image: url(img/3492868.gif); */
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header{
+  background: #000;
+  color: #ffd900;
+}
+#header .NavBar nav{
+    max-width: 100%;
+    padding:2rem;
+ 
+    background-color: rgba(0,0,0,.2);
+}
+nav{
+  position: fixed;
+  
+  background: #000;
+}
+nav ul{
+    text-align: center;
+    
+}
+nav ul li a{
+  text-decoration: none;
+  color:  rgb(216, 198, 33);
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    
+    padding-left:3rem;
+    text-transform: uppercase;
+color: rgb(158, 149, 66);
+font-family:'Railway',sans-serif ;
+letter-spacing: 0.1rem;
+font-weight: 600;
+transition: all ease 0.5s; 
+transition: transform 0.3s;
+}
+nav ul li:hover{
+    color:#ffd900;
+    transition: .4s;
+    transform:scale(1.2);
+}
+nav ul li::after{
+    content: '';
+    width:auto;
+    height: .2rem;
+    background:#ffd900;
+    position:absolute;
+    left:1.1rem;
+    bottom:-3rem;
+    transition:0.4s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+#G1 .hi{
+  position: absolute;
+  padding: 8rem;
+  margin-left: 40rem;
+  font-size: larger;
+  font-style: italic;
+  color: white;
+}
+
+.container {
+  background-color: #0514352f;
+  width: 85vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.5em;
+  box-shadow: 0 1.2em 2.8em rgba(0, 41, 22, 0.2);
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+}
+label {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #242e4c;
+}
+input {
+  font-size: 0em;
+}
+button#generate {
+  display: block;
+  width: 100%;
+  font-size: 1.1em;
+  margin: 2.7em 0 1.1em 0;
+  background-color: #ffd900ef;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: white;
+}
+#result {
+  text-align: center;
+  font-size: 3.7em;
+  font-size: 600;
+  color: #f2f3f8a2;
+}
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17rem;
+    height: 18rem;
+    margin-left: -40rem;
+    margin-top:12rem;
+    float: left;
+    /* perspective: 500px; */
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  .front{
+    font-size: 60px;
+   
+  }
+  .back{
+    font-size: 20px;
+  }
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #8400ff;
+    line-height: 300px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    background: #ffd900;
+    color: white;
+    transform: rotateY( 180deg );
+  }
+  .card2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17rem;
+    height: 18rem;
+    margin-left: -20rem;
+    margin-top:12rem;
+    float: left;
+    /* perspective: 500px; */
+  }
+  
+  .content2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card2:hover .content2 {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  .front2{
+    font-size: 60px;
+   
+  }
+  .back2{
+    font-size: 20px;
+  }
+  .front2,
+  .back2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #00ff62;
+    line-height: 300px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back2 {
+    background: #ffd900;
+    color: white;
+    transform: rotateY( 180deg );
+  }
+  .card3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17rem;
+    height: 18rem;
+    margin-left: 0rem;
+    margin-top:12rem;
+    float: left;
+    /* perspective: 500px; */
+  }
+  
+  .content3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card3:hover .content3 {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  .front3{
+    font-size: 60px;
+   
+  }
+  .back3{
+    font-size: 20px;
+  }
+  .front3,
+  .back3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #02bfee;
+    line-height: 300px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back3 {
+    background: #ffd900;
+    color: white;
+    transform: rotateY( 180deg );
+  }
+  .card4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17rem;
+    height: 18rem;
+    margin-left:20rem;
+    margin-top:12rem;
+    float: left;
+    perspective: 500px;
+  }
+  
+  .content4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card4:hover .content4 {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  .front4{
+    font-size: 60px;
+  }
+  .back4{
+    font-size: 20px;
+  }
+  .front4,
+  .back4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fa04e5;
+    line-height: 300px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back4 {
+    background: #ffd900;
+    color: white;
+    transform: rotateY( 180deg );
+  }
+  #G2{
+    width: 100%;
+    height: 100%;
+    padding-top:60rem;
+    
+    animation: changeBg 10s linear infinite;
+    display: grid;
+    place-items:center;
+  }
+  @keyframes changeBg{
+    0%{
+      background-color: rgb(9, 16, 49);
+    }
+    20%{
+      background-color: rgb(20, 2, 83);
+    }
+    40%{
+      background-color: rgb(1, 34, 56);
+    }
+    60%{
+      background-color:rgb(52, 4, 97);
+    }
+    80%{
+      background-color: rgb(1, 71, 71);
+    }
+    100%{
+      background-color: rgb(9, 16, 49);
+    }
+  }
+  #G2 img{
+  
+    padding: 2rem;
+  }
+  #G2 .b1{
+    margin-left: 6rem;
+    margin-top: -60rem;
+      position: absolute;
+    }
+  #G3 .b2{
+    margin-left: 32rem;
+    margin-top: 11rem;
+      position: absolute;
+    }
+  #G4 .b3{
+  margin-left: 32rem;
+  margin-top: 13rem;
+    position:absolute;
+  }
+  #G5 .b4{
+    margin-left: 32rem;
+    margin-top: 11rem;
+      position: absolute;
+    }
